@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewSampleCardViewId"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="40dp">
+               <TextView
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   android:id="@+id/nameTextViewId"
+                  android:paddingLeft="20dp"
+                   android:text="Md Noman Molla"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"></TextView>
+           </LinearLayout>
+           <LinearLayout
+               android:weightSum="8"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="40dp">
+               <LinearLayout
+                   android:gravity="center"
+                   android:layout_weight="2"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:paddingLeft="20dp"
+                       android:textAlignment="textStart"
+                       android:text="Roll:"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"></TextView>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_weight="2"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:id="@+id/rollTextViewId"
+                       android:textAlignment="textStart"
+                       android:text="338855"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"></TextView>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_weight="2"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:textAlignment="center"
+                       android:text="Regestation:"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"></TextView>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_weight="2"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:id="@+id/regTextViewId"
+                       android:text="261727"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"></TextView>
+               </LinearLayout>
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <View
+        android:background="#8474D6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+</LinearLayout>
